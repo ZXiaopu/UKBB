@@ -1,0 +1,24 @@
+Regenie step1 example
+Options in effect:
+  --step 1 \
+  --bed ukb22418_genotyped_postQC_EUR \
+  --phenoFile 01.adbominal_fat_ratio.remove.related.txt \
+  --bsize 1000 \
+  --use-relative-path \
+  --extract /home/dnanexus/01.adbominal_fat_ratio.snplist.txt \
+  --out 01.adbominal_fat_ratio
+
+
+Regenie step2 example
+Options in effect:
+  --step 2 \
+  --bgen ukb22828_c1_b0_v3.bgen \
+  --phenoFile 01.adbominal_fat_ratio.remove.related.txt \
+  --bsize 200 \
+  --pThresh 0.05 \
+  --test additive \
+  --pred 01.adbominal_fat_ratio_pred.list \
+  --gz \
+  --sample ukb22828_c1_b0_v3.sample \
+  --firth-se \
+  --out 01.adbominal_fat_ratio_firth
